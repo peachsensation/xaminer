@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Over</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Leeftijd</value>
+  </data>
+  <data name="Agency" xml:space="preserve">
+    <value>Agency</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
+    <value>Instructieset</value>
+  </data>
+  <data name="BackToHome" xml:space="preserve">
+    <value>Terug naar startpagina</value>
+  </data>
+  <data name="BDSM" xml:space="preserve">
+    <value>BDSM</value>
+  </data>
+  <data name="ChangeAdded" xml:space="preserve">
+    <value>Toegevoegd</value>
+  </data>
+  <data name="ChangeNone" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="ChangeRemoved" xml:space="preserve">
+    <value>Verwijderd</value>
+  </data>
+  <data name="ChangeUpdated" xml:space="preserve">
+    <value>Gewijzigd</value>
+  </data>
+  <data name="Cinema" xml:space="preserve">
+    <value>Sexbioscoop</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Sluiten</value>
+  </data>
+  <data name="Couple" xml:space="preserve">
+    <value>Stel</value>
+  </data>
+  <data name="Couples" xml:space="preserve">
+    <value>Stellen</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamant</value>
+  </data>
+  <data name="DiamondExclusive" xml:space="preserve">
+    <value>Exclusief</value>
+  </data>
+  <data name="DiamondPremium" xml:space="preserve">
+    <value>Premium</value>
+  </data>
+  <data name="DiamondUnset" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="DownloadFailed" xml:space="preserve">
+    <value>Bestand kon niet gedownload worden</value>
+  </data>
+  <data name="Empy" xml:space="preserve">
+    <value>Leeg</value>
+  </data>
+  <data name="EroticMassage" xml:space="preserve">
+    <value>Erotische massage</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Foutmelding</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Oops! 🙊 Er trad een fout op</value>
+  </data>
+  <data name="Escort" xml:space="preserve">
+    <value>Escort</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Favorieten</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Vrouw</value>
+  </data>
+  <data name="Females" xml:space="preserve">
+    <value>Vrouwen</value>
+  </data>
+  <data name="FixedLine" xml:space="preserve">
+    <value>Vaste lijn</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="HashCompareFailed" xml:space="preserve">
+    <value>De 2 bestands hashes komen niet overeen</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Prive ontvangst</value>
+  </data>
+  <data name="HomePage" xml:space="preserve">
+    <value>Startpagina</value>
+  </data>
+  <data name="IRLStats" xml:space="preserve">
+    <value>In real life (IRL) statistieken</value>
+  </data>
+  <data name="LastResult" xml:space="preserve">
+    <value>Toon laatste resultaat (plaats: {0}, aantal wijzigingen: {1})</value>
+  </data>
+  <data name="LastVisit" xml:space="preserve">
+    <value>Laatste bezoek</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Laden</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Man</value>
+  </data>
+  <data name="Males" xml:space="preserve">
+    <value>Mannen</value>
+  </data>
+  <data name="MassageClub" xml:space="preserve">
+    <value>Massagesalon</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobiel</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="NewExluded" xml:space="preserve">
+    <value>Uitgesloten</value>
+  </data>
+  <data name="NewIncluded" xml:space="preserve">
+    <value>Nieuw vermeld</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nee</value>
+  </data>
+  <data name="OnlineStats" xml:space="preserve">
+    <value>Online statistieken</value>
+  </data>
+  <data name="PageUrl" xml:space="preserve">
+    <value>Pagina link</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefoon</value>
+  </data>
+  <data name="Place" xml:space="preserve">
+    <value>Plaats</value>
+  </data>
+  <data name="ProfileImage" xml:space="preserve">
+    <value>Profielfoto</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>Eigenschap</value>
+  </data>
+  <data name="Providings" xml:space="preserve">
+    <value>Voorzieningen</value>
+  </data>
+  <data name="Query" xml:space="preserve">
+    <value>Zoekopdracht (plaatsnaam)</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Beoordeling</value>
+  </data>
+  <data name="RedLights" xml:space="preserve">
+    <value>Raamprostitutie</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Vernieuwen</value>
+  </data>
+  <data name="Results" xml:space="preserve">
+    <value>Resultaten</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Zoeken</value>
+  </data>
+  <data name="Shemale" xml:space="preserve">
+    <value>Shemale</value>
+  </data>
+  <data name="Shemales" xml:space="preserve">
+    <value>Shemales</value>
+  </data>
+  <data name="ShowErrors" xml:space="preserve">
+    <value>Toon fouten</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Unkown" xml:space="preserve">
+    <value>Onbekend</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Applicatie updaten</value>
+  </data>
+  <data name="UpdateAvailable" xml:space="preserve">
+    <value>Update beschikbaar</value>
+  </data>
+  <data name="UpdateProgress" xml:space="preserve">
+    <value>Update voortgang</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Waarden</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Versie</value>
+  </data>
+  <data name="Virtual" xml:space="preserve">
+    <value>Virtual</value>
+  </data>
+  <data name="VirtualSex" xml:space="preserve">
+    <value>Virtual Sex</value>
+  </data>
+  <data name="Visits" xml:space="preserve">
+    <value>Bezoeken</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+</root>

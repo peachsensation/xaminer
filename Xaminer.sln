@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xaminer.App", "Xaminer.App\Xaminer.App.csproj", "{68F509BD-9951-44A5-874B-99E91F0DFA28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xaminer.Generators.Places", "Xaminer.Generators.Places\Xaminer.Generators.Places.csproj", "{8899696C-DBA8-445B-A7DF-DD1FDACD48C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68F509BD-9951-44A5-874B-99E91F0DFA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F509BD-9951-44A5-874B-99E91F0DFA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F509BD-9951-44A5-874B-99E91F0DFA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F509BD-9951-44A5-874B-99E91F0DFA28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8899696C-DBA8-445B-A7DF-DD1FDACD48C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8899696C-DBA8-445B-A7DF-DD1FDACD48C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8899696C-DBA8-445B-A7DF-DD1FDACD48C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8899696C-DBA8-445B-A7DF-DD1FDACD48C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4B6FFB0-7BC4-4810-AA94-934FD0EA9C96}
+	EndGlobalSection
+EndGlobal

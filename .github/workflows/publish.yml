@@ -1,0 +1,72 @@
+name: Publish
+
+on: [workflow_dispatch]
+
+jobs:
+  publish-and-draft-release:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.1.1
+
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v3.2.0
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Publish
+        run: |
+          dotnet publish --configuration Release
+
+      - name: Get Version
+        id: appversion
+        shell: pwsh
+        run: |
+          $fileVersion = (Get-ItemProperty -Path './Xaminer.App/bin/Release/net8.0-windows/win-x64/publish/Xaminer.exe').VersionInfo.FileVersion
+          echo "APPVERSION=${fileVersion}" >> $Env:GITHUB_ENV
+
+      - name: Create/Upload Release
+        uses: actions/github-script@v7.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          script: |
+            const version = '${{ env.APPVERSION }}';
+            
+            const { data: release } = await github.rest.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: version,
+              name: 'Versie: ' + version,
+              body: 'A new release of the application.',
+              draft: true,
+              prerelease: false
+            });
+            
+            const fs = require('fs');
+            
+            await github.rest.repos.uploadReleaseAsset({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: 'Xaminer-windows-x64.exe',
+              release_id: release.id,
+              data: fs.readFileSync('./Xaminer.App/bin/Release/net8.0-windows/win-x64/publish/Xaminer.exe')
+            });
+            
+            const crypto = require('crypto');
+            
+            const sha256 = crypto.createHash('sha256');
+            const appData = fs.readFileSync('./Xaminer.App/bin/Release/net8.0-windows/win-x64/publish/Xaminer.exe');
+            sha256.update(appData);
+            const hashValue = sha256.digest('hex');
+            
+            fs.appendFileSync('hashes.sha256', `windows-x64\n`);
+            fs.appendFileSync('hashes.sha256', hashValue);
+            
+            await github.rest.repos.uploadReleaseAsset({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: 'hashes.sha256',
+              release_id: release.id,
+              data: fs.readFileSync('./hashes.sha256')
+            });
